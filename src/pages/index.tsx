@@ -2,12 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Collection from './components/Collection'
-import Footer from './components/Footer'
-import Programs from './components/Programs'
-import Campaign from './components/Campaign'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import Collection from '../components/Collection'
+import Footer from '../components/Footer'
+import Programs from '../components/Programs'
+import CollectionSlider from '../components/CollectionSlider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,8 +23,8 @@ export default function Home() {
         <Navbar/>
         <Hero/>
         <Collection/>
+        <CollectionSlider/>
         <Programs/>
-        <Campaign/>
         <Footer/>
       </section>
     </>
