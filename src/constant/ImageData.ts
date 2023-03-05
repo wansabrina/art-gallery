@@ -53,3 +53,32 @@ export const ImageData = [
       image: '/img/paiting (4).jpg',
     },
   ];
+
+
+  export const ExhibitNow = [
+    {
+      location: 'Zurich',
+      date: '22 February - 01 March 2023',
+      image: '/img/exhibit (1).png',
+    },{
+      location: 'Tokyo',
+      date: '22 February - 01 March 2023',
+      image: '/img/exhibit (2).png',
+    },{
+      location: 'Paris',
+      date: '22 February - 01 March 2023',
+      image: '/img/exhibit (3).png',
+    },{
+      location: 'Venice',
+      date: '22 February - 01 March 2023',
+      image: '/img/exhibit (4).png',
+    },{
+      location: 'Singapore',
+      date: '22 February - 01 March 2023',
+      image: '/img/exhibit (5).png',
+    },{
+      location: 'Surabaya',
+      date: 'Coming Soon',
+      image: '/img/exhibit (6).png',
+    },
+  ];

@@ -6,6 +6,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import { ImageData } from '@/constant/ImageData'
 import { FaArrowRight } from 'react-icons/fa';
 
+type CollectionSlider = {
+  image: string;
+  link?: string;
+}
 
 export default class PauseOnHover extends Component {
   render() {

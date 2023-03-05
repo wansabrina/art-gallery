@@ -14,7 +14,7 @@ const About = () => {
           <p className="text-lg text-justify text-gray-600 mb-4">The Van Gogh Academy is launching a new campaign to inspire aspiring artists around the world to explore their creativity. Join our classes to develop your skills and discover your unique artistic style.</p>
           <div className='flex'>
             <div className='py-3'>
-              <ButtonLink title='See More' link='#Programs'/>
+              <ButtonLink title='Join Our Campaign' link='basicrq'/>
             </div>
           </div>
         </div>
