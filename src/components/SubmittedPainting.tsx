@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export const API_URL = "https://api.harvardartmuseums.org/image";
-export const API_KEY = "4204f2f1-735e-46bc-aa71-2748c18dc7ab";
+export const API_KEY = "4204f2f1-735e-46bc-aa71-2748c18dc7ab"; //pisahin file
 
 type Artwork = {
   id: string;
