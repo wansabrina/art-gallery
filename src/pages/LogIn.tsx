@@ -5,8 +5,6 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import InputField from '@/components/InputField';
-import { BsFillCheckCircleFill } from 'react-icons/bs';
-import SubmitMessage from '@/components/SubmitMessage'
 
 type FormValues = {
   email: string,
@@ -19,7 +17,7 @@ export default function Demo() {
 
   useEffect(() => {
     if (isSubmitSuccessful) {
-      router.push('http://localhost:3000/') // replace "success-page" with your desired URL
+      router.push('https://art-gallery-oacease.vercel.app/') // replace "success-page" with your desired URL
     }
   }, [isSubmitSuccessful, router])
 
@@ -48,9 +46,9 @@ export default function Demo() {
           <div className="w-1/2.5 h-1/2 bg-white bg-opacity-80 rounded-md shadow-lg pl-8 flex flex-row items-center py-20">
             <form onSubmit={handleSubmit((data)=>{ console.log(data); })} className='flex flex-col gap-y-3 pr-20 pl-10'>
               <p className='text-black font-semibold text-2xl'>Log in</p>
-                <InputField type='text' name='email' placeholder='name@gmail.com' register={register} errors={errors} />
-                <InputField type='password' name='password' placeholder='Password' register={register} errors={errors} />          
-              <span className="mt-2  text-sm text-black">Don't have account? <a href="RegisterForm" className="font-medium text-blue-500 hover:underline">Register here</a>.</span>
+                <InputField type='text' name='email' label='Email' register={register} errors={errors} />
+                <InputField type='password' name='password' label='Password' register={register} errors={errors} />          
+              <span className="mt-2  text-sm text-black">Dont have account? <a href="RegisterForm" className="font-medium text-blue-500 hover:underline">Register here</a>.</span>
               <input type="submit" className='text-black bg-yellow-500 hover:bg-yellow-600 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center cursor-pointer'/>
             </form>
           </div>
