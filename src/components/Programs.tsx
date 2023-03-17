@@ -27,7 +27,7 @@ const PictureSection = () => {
                   <div className="h-48 bg-cover bg-center" style={{ backgroundImage: 'url("img/3.png")' }}></div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2">Painting Classes</h3>
-                    <p className="text-gray-600 ">Learn to paint with our expert instructors in a studio setting.</p>
+                    <p className="text-gray-600 ">Learn to paint and express yourself with our expert instructors in a studio setting.</p>
                     <a href="/national-gallery-of-art" className="flex items-center mt-4 font-semibold text-yellow-500 hover:text-yellow-300">
                       Learn more
                       <span className="ml-2"><FaArrowRight /></span>
