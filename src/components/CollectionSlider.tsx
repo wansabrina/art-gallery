@@ -4,18 +4,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ImageData } from "@/constant/ImageData";
-import { FaArrowRight } from "react-icons/fa";
 
 type CollectionSlider = {
   image: string;
-  link?: string;
+  link: string;
 };
 
 export default class PauseOnHover extends Component {
   render() {
     var settings = {
       dots: true,
-      infinite: true,
+      infinite: true, 
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
@@ -49,7 +48,7 @@ export default class PauseOnHover extends Component {
       ],
     };
     return (
-      <section className="mt-20 w-full px-20">
+      <section className="mt-20 w-full px-20" data-testid="collection-slider">
         <Slider {...settings}>
         {ImageData.map((item, index) => (
           <div className="p-4" key={index}>

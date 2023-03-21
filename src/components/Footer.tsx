@@ -3,11 +3,11 @@ import dynamic from 'next/dynamic'
 
 const Footer = () => {
   return (
-    <footer className="p-4 bg-yellow-500 rounded-t-lg shadow md:px-6 md:py-8hu">
+    <footer className="p-4 bg-yellow-500 rounded-t-lg shadow md:px-6 md:py-8hu" data-testid="footer">
     <div className="sm:flex sm:items-center sm:justify-between">
-        <a href="#" className="flex items-center mb-4 sm:mb-0">
+        <div className="flex items-center mb-4 sm:mb-0">
           <a href="#" className="font-bold text-3xl text-gray-800 font-crimson">Van Gogh Academy.</a>
-        </a>
+        </div>
         <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-800 sm:mb-0">
             <li>
                 <a href="https://art-gallery-oacease.vercel.app/" className="mr-4 hover:underline md:mr-6 ">Home</a>

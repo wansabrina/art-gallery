@@ -1,34 +1,25 @@
 import { useQuery } from "react-query";
 import Image from "next/image";
 import { useState } from "react";
+import { idText } from "typescript";
 
 export const API_URL = "https://api.harvardartmuseums.org/image";
-export const API_KEY = "4204f2f1-735e-46bc-aa71-2748c18dc7ab"; //pisahin file
+export const API_KEY = "4204f2f1-735e-46bc-aa71-2748c18dc7ab";
 
-type Artwork = {
-  id: string;
-  title: string;
-  imageUrl: string;
-};
+type Artwork = { id: string; imageUrl: string; };
 
-type ArtworkResponse = {
-  records: {
-    id: number;
-    title: string;
-    baseimageurl: string;
-  }[];
+type ArtworkResponse = { records: {id: number; baseimageurl: string; }[];
 };
 
 const formatArtworkResponse = (data: ArtworkResponse): Artwork[] => {
   return data.records.map((item) => ({
     id: String(item.id),
-    title: item.title,
     imageUrl: item.baseimageurl,
   }));
 };
 
 
-const getArtworks = async (page: number): Promise<Artwork[]> => {
+export const getArtworks = async (page: number): Promise<Artwork[]> => {
   const response = await fetch(
     `${API_URL}?apikey=${API_KEY}&page=${page}&size=30`
   );
@@ -57,12 +48,11 @@ const Artworks = () => {
 
   return (
     <section>
-      <div className="h-full p-24 mb-20">
+      <div className="h-full p-24 mb-20" data-testid="artwork-container">
         <ul className="grid grid-cols-10 gap-2">
-          {data?.map(({ id, title, imageUrl }) => (
+          {data?.map(({ id, imageUrl }) => (
             <li key={id} className="flex flex-col">
-              <Image src={imageUrl} alt={title} height={200} width={200} />
-              <h2 className="mt-2">{title}</h2>
+              <Image src={imageUrl} alt={id} height={200} width={200} />
             </li>
           ))}
         </ul>

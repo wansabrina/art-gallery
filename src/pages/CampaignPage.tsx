@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CampaignForm from '@/components/CampaignForm';
 import ExhibitSlider from '@/components/ExhibitSlider'
-import SubmittedPainting from '@/components/SubmittedPainting'
+import SubmittedPainting from '@/components/Artworks'
 
 export default function CampaignPage() {
         return (

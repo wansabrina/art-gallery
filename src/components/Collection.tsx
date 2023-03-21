@@ -6,12 +6,11 @@ import 'slick-carousel/slick/slick-theme.css';
 import { FamousImage } from '@/constant/ImageData'
 import { FaArrowRight } from 'react-icons/fa';
 
-
-export default class PauseOnHover extends Component {
+export default class Collection extends Component {
   render() {
     var settings = {dots: false,infinite: true,slidesToShow: 1,slidesToScroll: 1,autoplay: true,autoplaySpeed: 5000,pauseOnHover: true,};
     return (
-      <section className='my-10 px-5 sm:px-10 lg:px-20 flex flex-col' id='Collection'>
+      <section className='my-10 px-5 sm:px-10 lg:px-20 flex flex-col' id='Collection' data-testid="collection">
         <div className='mb-10 flex flex-col items-center justify-center'>
           <h1 className="mb-4 text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-none tracking-tight text-gray-900 font-crimson text-center">See Van Goghs Most Famous Collection</h1>
           <p className="mb-6 text-lg lg:text-xl text-gray-500 text-center sm:px-16 xl:px-48 font-normal">Van Goghs emotionally charged and vividly colorful paintings have become some of the most recognizable and beloved artworks in history.</p>
